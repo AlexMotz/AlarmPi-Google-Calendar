@@ -36,9 +36,12 @@ def FullTextQuery(calendar_service, text_query='wake'):
 				print "Comparison: Pass"
 				print "---"
 
-				songfile = random.choice(os.listdir("/home/pi/alarmclock/test_MP3s/")) #chooses the .mp3 file
-				print "File Selected:", songfile
-				command ="mpg321" + " " + "/home/pi/alarmclock/test_MP3s/" + "'"+songfile+"'"+ " -g 100" #plays the MP3 in it's entierty. As long as the song is longer than a minute then will only trigger once in the minute that start of the "wake" event
+				#songfile = random.choice(os.listdir("/home/pi/alarmclock/test_MP3s/")) #chooses the .mp3 file
+				#print "File Selected:", songfile
+				#command ="mpg321" + " " + "/home/pi/alarmclock/test_MP3s/" + "'"+songfile+"'"+ " -g 100" #plays the MP3 in it's entierty. As long as the song is longer than a minute then will only trigger once in the minute that start of the "wake" event
+
+				print "Sounding The Alarm: ", time
+				execfile("sound_the_alarm.py")
 
 				print command
 				os.system(command) #runs the bash command
