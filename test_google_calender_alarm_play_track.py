@@ -13,7 +13,7 @@ import time
 import xe #for the time comparator
 from feed.date.rfc3339 import tf_from_timestamp #also for the comparator
 from datetime import datetime #for the time on the rpi end
-from apscheduler.scheduler import Scheduler #this will let us check the calender on a regular interval
+from apscheduler.schedulers.blocking import BlockingScheduler #this will let us check the calender on a regular interval
 import os, random #to play the mp3 later
 
 #this is more stuff google told me to do, but essentially it handles the login credentials
@@ -21,6 +21,7 @@ calendar_service = gdata.calendar.service.CalendarService()
 calendar_service.email = 'youremail@yourdomain' #your email
 calendar_service.password = 'yourgcalpassword' #your password
 calendar_service.source = 'Google-Calendar_Python_Sample-1.0'
+FREQUENCY_CHECK = 5 # in seconds
 calendar_service.ProgrammaticLogin()
 
 def FullTextQuery(calendar_service, text_query='wake'):
@@ -54,6 +55,6 @@ def callable_func():
 	FullTextQuery(calendar_service)
 	print "-------------end------------"
 
-scheduler = Scheduler(standalone=True)
-scheduler.add_interval_job(callable_func,seconds=5)
-scheduler.start() #runs the program indefinatly on an interval of 5 seconds
+scheduler = BlockingScheduler()
+scheduler.add_job(callable_func, 'interval', seconds=FREQUENCY_CHECK)
+scheduler.start()
