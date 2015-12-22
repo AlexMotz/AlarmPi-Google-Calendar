@@ -1,4 +1,4 @@
-Welcome to the Alarm Pi Google calendar scheduler code.
+**Welcome to the Alarm Pi Google calendar scheduler code.**
 
 It's (will be) "A Spoken Weather And News Clock" for your Raspberry Pi via an event in you google calendar called "wake"
 
@@ -41,13 +41,13 @@ I wanted a way to re-purpose a service I use everyday (that way I wouldn’t hav
 
   ****************************************************************
 
-*COMMANDS I USED*
+**COMMANDS I USED**
 
 I had some trouble getting everything working the first time around. So I made a composite list of all the commands that I used. This way it will be much easier for you to setup.
 
-
-**Section 1: Basic Setup**
   ****************************************************************
+**Section 1: Basic Setup**
+
   ***Make sure RaspberryPi is uptodate***
 
     sudo apt-get update
@@ -61,9 +61,9 @@ I had some trouble getting everything working the first time around. So I made a
       sudo apt-get install python
       sudo apt-get install python-setuptools
 
-
-  **Section 2: Installing packages and required libraries**
   ****************************************************************
+  **Section 2: Installing packages and required libraries**
+
   ***Install mpg123 command line MP3 Player***
 
     sudo apt-get install python-feedparser mpg123 festival
