@@ -30,9 +30,11 @@ def full_text_query(calendar_service, text_query):
 
             if alarm == now:
                 print "Comparison: Pass\n---"
-                song_file = random.choice(os.listdir(MP3_FOLDER))
-                print "File Selected: {}".format(song_file)
-                command = "mpg123 '{}/{}'".format(MP3_FOLDER, song_file)
+                #song_file = random.choice(os.listdir(MP3_FOLDER))
+                #print "File Selected: {}".format(song_file)
+                #command = "mpg123 '{}/{}'".format(MP3_FOLDER, song_file)
+                print "Sounding The Alarm: ", time
+                command = execfile("sound_the_alarm.py")
                 os.system(command)
 
             else:
