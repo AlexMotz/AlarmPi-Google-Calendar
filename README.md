@@ -41,6 +41,7 @@ I wanted a way to re-purpose a service I use everyday (that way I wouldn’t hav
 
   ****************************************************************
 
+*COMMANDS I USED*s
 
 I had some trouble getting everything working the first time around. So I made a composite list of all the commands that I used. This way it will be much easier for you to setup.
 
@@ -54,10 +55,10 @@ I had some trouble getting everything working the first time around. So I made a
     *Select the Internationalization Option, then set your timezone*
 
   ***Insure Python and the Setup Tools are installed***
-    sudo apt-get install python
-    sudo apt-get install python-setuptools
+      sudo apt-get install python
+      sudo apt-get install python-setuptools
 
-    **Section 2: Installing packages and required libraries**
+  **Section 2: Installing packages and required libraries**
 
   ***Install mpg123 command line MP3 Player***
     sudo apt-get install python-feedparser mpg123 festival
