@@ -121,7 +121,7 @@ https://www.ivona.com/us/account/speechcloud/creation/
 
     wget https://pypi.python.org/packages/source/p/pyvona/pyvona-0.25.tar.gz
     tar zxvf pyvona-0.25.tar.gz
-    cd pyvona-0.25.tar.gz
+    cd pyvona-0.25
     sudo python setup.py install
     cd ..
   ****************************************************************
