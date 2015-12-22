@@ -42,9 +42,7 @@ using a cron job you will need everything below but stop before the crontab comm
   ****************************************************************
 
 
-  ***I had some trouble getting everything working the first time around.
-  So I made a composite list of all the commands that I used.
-  This way it will be much easier for you to setup.***
+***I had some trouble getting everything working the first time around. So I made a composite list of all the commands that I used. This way it will be much easier for you to setup.***
 
 **Section 1: Basic Setup**
 ***Make sure RaspberryPi is uptodate***
