@@ -42,9 +42,12 @@ using a cron job you will need everything below but stop before the crontab comm
   ****************************************************************
 
 
-***I had some trouble getting everything working the first time around. So I made a composite list of all the commands that I used. This way it will be much easier for you to setup.***
+  ***I had some trouble getting everything working the first time around.
+  So I made a composite list of all the commands that I used.
+  This way it will be much easier for you to setup.***
 
-**Section 1: Basic Setup**
+    **Section 1: Basic Setup**
+
 ***Make sure RaspberryPi is uptodate***
   sudo apt-get update
   sudo apt-get upgrade
@@ -56,7 +59,8 @@ using a cron job you will need everything below but stop before the crontab comm
   sudo apt-get install python
   sudo apt-get install python-setuptools
 
-**Section 2: Installing packages and required libraries**
+    **Section 2: Installing packages and required libraries**
+    
 ***Install mpg123 command line MP3 Player***
   sudo apt-get install python-feedparser mpg123 festival
 
@@ -95,6 +99,7 @@ using a cron job you will need everything below but stop before the crontab comm
   sudo python setup.py install
   cd ..
 
-**Section 3: Download alarmclock code from repo**
+    **Section 3: Download alarmclock code from repo**
+    
 ***Download/GitClone Code from Repo***
   git clone https://github.com/AlexMotz/AlarmPi-Google-Calendar
