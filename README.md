@@ -38,8 +38,9 @@ I wanted a way to re-purpose a service I use everyday (that way I wouldn’t hav
     http://stackoverflow.com/questions/1941927/convert-an-rfc-3339-time-to-a-standard-python-timestamp
     http://home.blarg.net/~steveha/pyfeed.html
 
-
-  ****************************************************************
+****************************************************************
+****************************************************************
+****************************************************************
 
 **COMMANDS I USED**
 
@@ -109,9 +110,9 @@ I had some trouble getting everything working the first time around. So I made a
     sudo python setup.py install
     cd ..
 
-
-**Section 3: Download alarm clock code from repo**
   ****************************************************************
+**Section 3: Download alarm clock code from repo**
+
   ***Download/GitClone Code from Repo***
 
     git clone https://github.com/AlexMotz/AlarmPi-Google-Calendar
