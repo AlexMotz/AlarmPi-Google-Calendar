@@ -46,6 +46,13 @@ I wanted a way to re-purpose a service I use everyday (that way I wouldn’t hav
 
 I had some trouble getting everything working the first time around. So I made a composite list of all the commands that I used. This way it will be much easier for you to setup.
 
+*** If you wish to use Ivona voice from Amazon you must get a beta test account at:
+
+https://www.ivona.com/us/account/speechcloud/creation/
+
+1. Open an account
+2. Generate credentials
+3. Put accesskey and secretkey in config file
   ****************************************************************
 **Section 1: Basic Setup**
 
@@ -67,7 +74,7 @@ I had some trouble getting everything working the first time around. So I made a
 
   ***Install mpg123 command line MP3 Player***
 
-    sudo apt-get install python-feedparser mpg123 festival
+    sudo apt-get install python-feedparser mpg123 festival pyvona
 
   ***Allow writing to Ram for Voice Announcements, etc...***
   *If we don't do this we will eventually SD card will fail due to reading/writing all the time*
@@ -110,6 +117,13 @@ I had some trouble getting everything working the first time around. So I made a
     sudo python setup.py install
     cd ..
 
+  ***Install Pyvona***
+
+    wget https://pypi.python.org/packages/source/p/pyvona/pyvona-0.25.tar.gz
+    tar zxvf pyvona-0.25.tar.gz
+    cd pyvona-0.25.tar.gz
+    sudo python setup.py install
+    cd ..
   ****************************************************************
 **Section 3: Download alarm clock code from repo**
 
